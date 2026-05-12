@@ -2,21 +2,25 @@
 //
 
 #include <iostream>
+#include<string>
 
 int main()
 {
+	std::string hello = "Hello World!";
+    std::string reverse = hello;
+    std::reverse(reverse.begin(), reverse.end());
     for (int i = 0; i < 10; i++)
     {
         
-
         if (i % 2 == 0)
         {
-            std::cout << "Hello World!\n";
+            std::cout << hello << "\n";
         }
         else
         {
-            std::cout << "!dlroW olleH\n";
+            std::cout << reverse << "\n";
         }
+        
     }
 }
 
